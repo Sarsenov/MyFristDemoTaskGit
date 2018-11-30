@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class DemotaskApplication {
 
 int adds =0;
+String newWord = "SarsenovaM";
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemotaskApplication.class, args);
