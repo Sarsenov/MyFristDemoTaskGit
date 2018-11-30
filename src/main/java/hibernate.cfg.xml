@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:mysql://localhost:3306/telbook</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <mapping resource="com/example/demotask/models/ContactsModel.hbm.xml"/>
+        <mapping class="com.example.demotask.models.ContactsModel"/>
+        <mapping resource="com/example/demotask/models/GroupsModel.hbm.xml"/>
+        <mapping class="com.example.demotask.models.GroupsModel"/>
+        <mapping resource="com/example/demotask/models/TelbookModel.hbm.xml"/>
+        <mapping class="com.example.demotask.models.TelbookModel"/>
+        <mapping class="com.example.demotask.models.UsersModel"/>
+        <mapping resource="com/example/demotask/models/UsersModel.hbm.xml"/>
+        <!-- <property name="connection.username"/> -->
+        <!-- <property name="connection.password"/> -->
+
+        <!-- DB schema will be updated if needed -->
+        <!-- <property name="hbm2ddl.auto">update</property> -->
+    </session-factory>
+</hibernate-configuration>

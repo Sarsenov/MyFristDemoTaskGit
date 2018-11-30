@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>BookPage</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Result</h1>
+<h2 th:text="'WELCOME to your BookPage, '+${user.userName}"/>
+
+<form action="#" th:action="@{/createBook}" th:object="${book}" method="post">
+
+    <input type="text" th:field="*{bookName}" required placeholder="Book Name" minlength="2" maxlength="50"/><br>
+
+    <input type="submit" value="Create Book"/>
+
+</form>
+
+</body>
+</html>
